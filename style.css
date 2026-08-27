@@ -1,18 +1,118 @@
+:root {
+    --color-fondo: white;
+    --color-primario: rgb(98, 30, 248)
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*GENERAL*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+}
+/*HEADER*/
+
+.header-flex {
+    background-color: var(--color-primario);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between; /* Logo a la izq, Nav a la der */
+    align-items: center;            /* Centrado vertical perfecto */
+    gap: 30px;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    display: block;
+}
+
+/*BUSCADOR*/
+
+.buscador-container {
+    flex: 1;                     /* Toma el espacio disponible en el centro */
+    display: flex;
+    justify-content: center;     /* Centra la barra horizontalmente */
+    max-width: 600px;            /* Limita qué tan larga puede llegar a ser */
+}
+
+.busqueda {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+}
+
+/*BOTONES*/
+.nav-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.div-link-enc, .div-boton-enc {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.hipervinc {
+    color: var(--color-fondo);
+    text-decoration: none;
+}
+
+.btn-enc {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
 /*Celular*/
-@media(max-width: 480px){
-    body{
-        background-color: chartreuse;
+@media(max-width: 479px){
+    .header-flex {
+        flex-direction: column;  /* Apila logo, buscador y menú */
+        gap: 15px;
+    }
+
+    .buscador-container {
+        width: 100%;             /* En móvil ocupa todo el ancho */
+        max-width: 100%;
+    }
+
+    .nav-flex {
+        flex-wrap: wrap;         /* Permite que los botones bajen si no entran */
+        justify-content: center;
     }
 }
 /*Tablet*/
-@media(max-width: 768px){
-    body{
-        background-color: chartreuse;
+@media(min-width: 480px) and (max-width: 1024px){
+    .header-flex {
+        flex-direction:row;  
+        gap: 15px;
+    }
+
+    .buscador-container {
+        width: 100%;             
+        max-width: 100%;
+    }
+
+    .nav-flex {
+        flex-wrap: wrap;         
+        justify-content: center;
     }
 }
 /*Desktop*/
-@media(min-width: 1024px){
+@media(min-width: 1025px){
     body{
-        background-color: chartreuse;
+        background-color: white;
     }
 }

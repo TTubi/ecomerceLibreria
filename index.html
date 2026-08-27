@@ -4,33 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petite Ross</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-
-        <div>
-            <nav>
-                <a class="m-nav-btn" data-toggle="dropdown" data-display="static" aria-expanded="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
-                        <title>menu</title>
-                            <mask id="mask0_127_8099" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="26" height="26">
-                                <rect width="26" height="26" fill="#D9D9D9"></rect>
-                            </mask>
-                            <g mask="url(#mask0_127_8099)">
-                                <path d="M3.79199 18.7146V17.6312H22.2087V18.7146H3.79199ZM3.79199 13.5417V12.4583H22.2087V13.5417H3.79199ZM3.79199 8.36873V7.2854H22.2087V8.36873H3.79199Z" fill="#1C1B1F"></path>
-                            </g>
-                        </svg>
-                        <span>Menú</span></a>
-                <img class= "logo" src="" alt="logo">
-                <input class= "busqueda" type="search" placeholder="Buscar por libro, autor...">    
-                <a class= "hipervinc" href="">Inicio</a>
-                <a class= "hipervinc" href="">Catalogo</a>
-                <button>Cuenta</button>
-                <button>Carrito</button>
-            </nav>
+    <header class="header-flex">
+        
+        <a href="">
+            <img class="logo" src="./assets/img/logo.png" alt="logo">
+        </a>
+        
+        <div class="buscador-container">
+            <input class="busqueda" type="search" placeholder="Buscar por libro, autor...">    
         </div>
 
+        <nav class="nav-flex">
+            <div class="div-link-enc">
+                <a class="hipervinc" href="#">Mas vendidos</a>
+                <a class="hipervinc" href="#">Catálogo</a>
+            </div>    
+            <div class="div-boton-enc">
+                <button class="btn-enc">Cuenta</button>
+                <button class="btn-enc">Carrito</button>
+            </div>    
+        </nav>
     </header>
 
     <main>
