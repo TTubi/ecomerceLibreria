@@ -1,0 +1,126 @@
+:root {
+    --color-fondo: white;
+    --color-primario: rgb(98, 30, 248)
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*HEADER*/
+
+.header-flex {
+    background-color: var(--color-primario);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    display: block;
+}
+
+/*BUSCADOR*/
+
+.buscador-container {                   
+    display: flex;
+    justify-content: left;
+    width: 30%;
+}
+
+.busqueda {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    width: 100%;   
+    max-width: 600px;
+}
+
+/*NAV DE LINKS Y BOTOES*/
+.nav-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/*LINKS*/
+.div-link-enc{
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.div-boton-enc {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hipervinc {
+    color: var(--color-fondo);
+    text-decoration: none;
+}
+/*BOTONES*/
+.btn-enc {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.carrito{
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+
+/*Celular*/
+@media(max-width: 479px){
+    .header-flex {
+        flex-direction: column;  /* Apila logo, buscador y menú */
+        gap: 15px;
+    }
+
+    .buscador-container {
+        width: 100%;             /* En móvil ocupa todo el ancho */
+        max-width: 100%;
+    }
+
+    .nav-flex {
+        flex-wrap: wrap;         /* Permite que los botones bajen si no entran */
+        justify-content: center;
+    }
+}
+/*Tablet*/
+@media(min-width: 480px) and (max-width: 1024px){
+    .header-flex {
+        flex-direction:row;  
+        gap: 15px;
+    }
+
+    .buscador-container {
+        width: 100%;             
+        max-width: 100%;
+    }
+
+    .nav-flex {
+        flex-wrap: wrap;         
+        justify-content: center;
+    }
+}
+/*Desktop*/
+@media(min-width: 1025px){
+    body{
+        background-color: white;
+    }
+}
