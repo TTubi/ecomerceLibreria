@@ -1,7 +1,7 @@
 /*HEADER*/
 
 .header-flex {
-    background-color: var(--color-primario);
+    background-color: rgb(131, 2, 2);
     padding: 15px 30px;
     display: flex;
     justify-content: space-between; 
