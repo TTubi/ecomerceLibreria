@@ -77,17 +77,17 @@
 /*Celular*/
 @media(max-width: 479px){
     .header-flex {
-        flex-direction: column;  /* Apila logo, buscador y menú */
+        flex-direction: column;  
         gap: 15px;
     }
 
     .buscador-container {
-        width: 100%;             /* En móvil ocupa todo el ancho */
+        width: 100%;             
         max-width: 100%;
     }
 
     .nav-flex {
-        flex-wrap: wrap;         /* Permite que los botones bajen si no entran */
+        flex-wrap: wrap;         
         justify-content: center;
     }
 }
