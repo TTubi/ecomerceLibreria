@@ -1,17 +1,7 @@
-:root {
-    --color-fondo: white;
-    --color-primario: rgb(98, 30, 248)
-}
-
-*{
-    padding: 0;
-    margin: 0;
-}
-
 /*HEADER*/
 
 .header-flex {
-    background-color: var(--color-primario);
+    background-color: rgb(131, 2, 2);
     padding: 15px 30px;
     display: flex;
     justify-content: space-between; 
@@ -20,7 +10,7 @@
 }
 
 .logo {
-    width: 70px;
+    width: 200px;
     height: auto;
     display: block;
 }
@@ -41,7 +31,7 @@
     max-width: 600px;
 }
 
-/*NAV DE LINKS Y BOTOES*/
+/*NAV DE LINKS Y BOTONES*/
 .nav-flex {
     display: flex;
     align-items: center;
@@ -104,7 +94,7 @@
 /*Tablet*/
 @media(min-width: 480px) and (max-width: 1024px){
     .header-flex {
-        flex-direction:row;  
+        flex-direction:column;  
         gap: 15px;
     }
 
@@ -118,7 +108,7 @@
         justify-content: center;
     }
 }
-/*Desktop*/
+/*Computadora*/
 @media(min-width: 1025px){
     body{
         background-color: white;

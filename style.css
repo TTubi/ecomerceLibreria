@@ -9,50 +9,41 @@
 }
 
 /*GENERAL*/
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: white;
 }
 
-
-/*Celular*/
-@media(max-width: 479px){
-    .header-flex {
-        flex-direction: column;  /* Apila logo, buscador y menú */
-        gap: 15px;
-    }
-
-    .buscador-container {
-        width: 100%;             /* En móvil ocupa todo el ancho */
-        max-width: 100%;
-    }
-
-    .nav-flex {
-        flex-wrap: wrap;         /* Permite que los botones bajen si no entran */
-        justify-content: center;
-    }
+main {
+    min-height: 100vh;
+    display: flex;
 }
-/*Tablet*/
-@media(min-width: 480px) and (max-width: 1024px){
-    .header-flex {
-        flex-direction:row;  
-        gap: 15px;
-    }
 
-    .buscador-container {
-        width: 100%;             
-        max-width: 100%;
-    }
-
-    .nav-flex {
-        flex-wrap: wrap;         
-        justify-content: center;
-    }
+.pre-final{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 10px;
+    
 }
-/*Desktop*/
-@media(min-width: 1025px){
-    body{
-        background-color: white;
-    }
+.pre-final button{
+    padding: 15px;
+}
+
+.pre-final input {
+    padding: 7px;
+    width: 250px;
+}
+
+.pre-final-texto {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.final {
+    background-color: black;
 }
